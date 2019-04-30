@@ -1,0 +1,38 @@
+$drag-bar-height: 4px;
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #4787ff;
+    background-color: hsl(214, 100%, 87%);
+    border-radius: 6px;
+
+    .block-title {
+        font-weight: bold;
+        flex-grow: 0;
+    }
+    .block-body {
+        flex-grow: 1;
+    }
+
+    .block-drag {
+        height: $drag-bar-height;
+        width: 100%;
+        background-color: #aed1ff;
+        flex-grow: 0;
+        cursor: ns-resize;
+
+        &.top {
+            top: 0;
+        }
+
+        &.bottom {
+            bottom: 0;
+        }
+
+        &:hover {
+            background-color: #9cc6fd;
+        }
+    }
+}

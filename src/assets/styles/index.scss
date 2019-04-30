@@ -1,0 +1,19 @@
+html, body, #root {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// Global variables
+@import 'globals';
+
+// Leftovers
+@import 'normalize';
+
+// Mixins:
+@import 'mixins/flexbox';
+
+// Common:
+@import 'common/data-grid';

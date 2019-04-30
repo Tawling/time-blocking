@@ -1,0 +1,15 @@
+@import 'static-path';
+
+@if variable-exists(cdnStaticPath) {
+    $staticPath: $cdnStaticPath;
+}
+
+
+$min-page-width: 1280px;
+
+
+// Colors:
+$white: #fff;
+$link-blue: #0e59d1;
+$color-info: #666;
+$color-text: #181818;

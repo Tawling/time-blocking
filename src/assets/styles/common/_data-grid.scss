@@ -1,0 +1,108 @@
+.data-grid-title {
+    color: $color-text;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    &:fists-child,
+    &.no-margin-top {
+        margin-top: 0;
+    }
+}
+
+.data-grid-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-left: 1.4rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    margin-bottom: 0;
+    text-align: left;
+    color: $color-text;
+
+    &-full-width {
+        margin-left: 0;
+    }
+
+    &-hint {
+        margin-left: 2.5rem;
+        margin-top: -0.9rem;
+    }
+
+    &.space-between {
+        justify-content: space-between;
+        text-align: justify;
+    }
+
+    .column {
+        &.label-column {
+            flex-shrink: 0;
+            padding-right: 1rem;
+
+            &-flex {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &.label-column-small {
+            flex-shrink: 0;
+            padding-right: 8px;
+        }
+
+        &.w-long {
+            margin-bottom: 0;
+            width: 140px;
+        }
+
+        &.no-shrink-column {
+            flex-shrink: 0;
+            align-self: flex-start;
+        }
+
+        // TODO: should be removed when Settings styles are refactored
+        .with-slider {
+            width: 240px;
+        }
+    }
+
+    .data-grid-row-with-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .data-grid-row-label {
+        color: #5b5c60;
+    }
+
+    .hint {
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
+        color: $color-info;
+    }
+
+    .data-grid-row-center {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.data-grid-small {
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

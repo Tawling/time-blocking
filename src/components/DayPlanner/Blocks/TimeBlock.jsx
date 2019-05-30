@@ -28,6 +28,12 @@ export class TimeBlock extends React.Component {
         })
     }
 
+    handleMouseDown = () => {
+        this.setState({
+            isSelected: true,
+        })
+    }
+
     render() {
         const { title, minutes } = this.props
         const style = {

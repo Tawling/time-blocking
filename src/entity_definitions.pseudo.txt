@@ -1,0 +1,25 @@
+const number = 'number'
+const date = 'date'
+const string = 'string'
+
+const BlockTemplate = {
+    id: number,
+    created: date,
+    modified: date,
+    color: string,
+    borderColor: string,
+    textColor: string,
+    defaultMinutes: number,
+    defaultTitle: string,
+    defaultContent: string,
+}
+
+const TimeBlock = {
+    id: number,
+    created: date,
+    modified: date,
+    templateID: number,
+    minutes: number,
+    title: string,
+    content: string,
+}

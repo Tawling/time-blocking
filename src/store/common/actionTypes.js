@@ -3,7 +3,7 @@ export const dayViewActions = {
 }
 
 export const timeBlockActions = {
-    SELECT_TIME_BLOCK: 'SELECT_TIME_BLOCK',
+    SET_SELECTED_TIME_BLOCK: 'SET_SELECTED_TIME_BLOCK',
     TIME_BLOCK_DRAG_START: 'TIME_BLOCK_DRAG_START',
     TIME_BLOCK_DRAG_END: 'TIME_BLOCK_DRAG_END',
 }

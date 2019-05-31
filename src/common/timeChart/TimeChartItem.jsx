@@ -12,14 +12,14 @@ export class TimeChartItem extends React.Component {
         chartMeta: PropTypes.object,
         isDragging: PropTypes.bool.isRequired,
         connectDragSource: PropTypes.func.isRequired,
-        locked: PropTypes.bool.isRequired,
+        isLocked: PropTypes.bool.isRequired,
     }
 
     static defaultProps = {
         className: '',
         isDragging: false,
         dragSource: (data) => data,
-        locked: false,
+        isLocked: false,
     }
 
     static dragSourceContract = {
@@ -36,7 +36,7 @@ export class TimeChartItem extends React.Component {
                 return
             }
         },
-        canDrag: ({ locked }) => !locked,
+        canDrag: ({ isLocked }) => !isLocked,
     }
 
     render() {
